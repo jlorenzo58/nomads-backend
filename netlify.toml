@@ -1,6 +1,6 @@
 [build]
   command = "npm run build" # Replace with your build command if necessary
-  functions = "functions"
+  functions = "netlify/functions"
 
 [[redirects]]
   from = "/api/*"
