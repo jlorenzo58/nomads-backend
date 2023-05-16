@@ -14,6 +14,12 @@ async function getPostgresVersion() {
 }
 getPostgresVersion();
 
+router.get('/', (req, res)=>{
+    res.json({
+        'hello':'hi'
+    })
+})
+
 router.post('/login', async (req, res) => {
     const { username, password } = req.body;
   
