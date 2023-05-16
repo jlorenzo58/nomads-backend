@@ -33,5 +33,5 @@ router.post('/login', async (req, res) => {
     }
 });
 
-app.use('./netlify/netlify/functions/api', router);
+app.use('/.netlify/netlify/functions/api', router);
 module.exports.handler = serverless(app);
